@@ -1,5 +1,8 @@
+/*
 
-/* import fonts */
+*/
+/* import fonts *//*
+
 @font-face {
   font-family: "Source Sans";
   src: url("fonts/SourceSansPro-Regular.ttf");
@@ -34,13 +37,17 @@
   font-weight: bold;
 }
 
-/* overhead navigation bar*/
+*/
+/* overhead navigation bar*//*
+
 .navbar {
   background: #723D46 !important;
   font-size: 1rem;
 }
 
-/* navigation bar: text*/
+*/
+/* navigation bar: text*//*
+
 .navbar a {
   color: #ffffff !important;
   font-family: "Bitter", sans-serif;
@@ -48,21 +55,33 @@
   margin-right: 10px;
 }
 
-/* navigation bar: text color of page titles when hovered*/
+*/
+/* navigation bar: text color of page titles when hovered*//*
+
 .navbar a:hover {
   color: #2f401f !important;
   transition-duration: 0.4s;
 }
 
-/* navigation bar: when page title is selected*/
+*/
+/* navigation bar: when page title is selected*//*
+
 .navbar-nav > .active > .nav-link {
-  background-color: #e6eddf !important; /* selected text background fill */
-  color: #2f401f !important; /* selected text colour*/
+  background-color: #e6eddf !important; */
+/* selected text background fill *//*
+
+  color: #2f401f !important; */
+/* selected text colour*//*
+
   font-weight: normal !important;
-  transition-duration: 0.4s; /* how quickly to change*/
+  transition-duration: 0.4s; */
+/* how quickly to change*//*
+
 }
 
-/* left side links */
+*/
+/* left side links *//*
+
 .bd-links > .active a {
   color: #3c81be !important;
   transition-duration: 0.4s;
@@ -74,7 +93,9 @@
   transform: translate(2px, 0px);
 }
 
-/* right side links */
+*/
+/* right side links *//*
+
 .toc-entry > .nav-link.active {
   font-weight: 600;
   color: #344b39;
@@ -82,7 +103,9 @@
   border-left: 2px solid #da714a;
 }
 
-/* body text*/
+*/
+/* body text*//*
+
 a {
   color: #0086b3;
 }
@@ -92,7 +115,9 @@ a:hover {
   text-decoration: none;
 }
 
-/* body links (external, add link icon) */
+*/
+/* body links (external, add link icon) *//*
+
 a.reference.external:after {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
@@ -117,14 +142,18 @@ p.card-reference {
   font-size: 1.1rem;
 }
 
-/* get rid of external link icon on linked images*/
+*/
+/* get rid of external link icon on linked images*//*
+
 a.reference.external.image-reference:after {
   content: ' ';
   font-size: 0.5em;
   vertical-align: super;
 }
 
-/* header links */
+*/
+/* header links *//*
+
 a.headerlink {
   color: white;
   transition-duration: 0.2s;
@@ -136,7 +165,9 @@ a.headerlink:hover {
   transition-duration: 0.2s;
 }
 
-/* text fonts and colors */
+*/
+/* text fonts and colors *//*
+
 body {
   background-color: white;
   margin-bottom: 1.15rem;
@@ -204,7 +235,9 @@ h6 {
   font-size: 1em;
 }
 
-/* format search bar */
+*/
+/* format search bar *//*
+
 .bd-search {
   position: relative;
   padding: 1rem 15px;
@@ -231,11 +264,43 @@ form:focus {
   border: 1px !important;
 }
 
-*//**//**//**//* override table width restrictions *//**//**//**//*
+*//*
+*/
+/**//*
+*/
+/**//*
+*/
+/**//*
+*/
+/* override table width restrictions *//*
+*/
+/**//*
+*/
+/**//*
+*/
+/**//*
+*/
+/*
 @media screen and (min-width: 767px) {
   .wy-table-responsive table td {
-    *//**//**//**//* !important prevents the common CSS stylesheets from overriding
-          this as on RTD they are loaded after this stylesheet *//**//**//**//*
+    *//*
+*/
+/**//*
+*/
+/**//*
+*/
+/**//*
+*/
+/* !important prevents the common CSS stylesheets from overriding
+          this as on RTD they are loaded after this stylesheet *//*
+*/
+/**//*
+*/
+/**//*
+*/
+/**//*
+*/
+/*
     white-space: normal !important;
   }
 
@@ -245,7 +310,9 @@ form:focus {
 }
 
 
-/* list line spacing */
+*/
+/* list line spacing *//*
+
 ol.simple {
   margin-bottom: 1em;
 }
@@ -264,14 +331,18 @@ h6 {
   line-height: 1.5;
 }
 
-/* List items in main area, but not in side bars */
+*/
+/* List items in main area, but not in side bars *//*
+
 body > li,
 p {
   line-height: 1.5;
   margin: 0.3rem 0;
 }
 
-/* change color of Twitter logo */
+*/
+/* change color of Twitter logo *//*
+
 i.fa-twitter-square:before {
   color: #333;
 }
@@ -279,19 +350,25 @@ i.fa-twitter-square:before {
 
 
 
-/* logo */
+*/
+/* logo *//*
+
 .navbar-brand {
   position: relative;
   height: 60px;
   width: auto;
 }
 
-/* Remove skip link from top of page */
+*/
+/* Remove skip link from top of page *//*
+
 .skip-link {
     display: none
 }
 
-/* Make top level nav bar links a bit bigger */
+*/
+/* Make top level nav bar links a bit bigger *//*
+
 .navbar {
     font-size: 1.1em;
 }
@@ -306,7 +383,9 @@ i.fa-twitter-square:before {
 
 
 
-/* Bonsai workflows & copy button */
+*/
+/* Bonsai workflows & copy button *//*
+
 .download-copy-img
 {
   text-align: right;
@@ -398,13 +477,17 @@ i.fa-twitter-square:before {
 
 
 
-/* Quick links */
+*/
+/* Quick links *//*
+
 .quicklinks {
   color: var(--onix-txt-color) !important;
 }
 
 
-/* Landing page cards */
+*/
+/* Landing page cards *//*
+
 .card-columns {
   column-count: 4 !important;
 }
@@ -436,7 +519,9 @@ i.fa-twitter-square:before {
 }
 
 
-/* Gallery cards */
+*/
+/* Gallery cards *//*
+
 
 .gallery-card .card-header {
   height: 100%;
@@ -445,10 +530,15 @@ i.fa-twitter-square:before {
   justify-content: center;
   text-align: center;
 
-  } /* example of the default height for title */
+  } */
+/* example of the default height for title *//*
 
 
-/* ensure images stay within the column bounds*/
+
+*/
+/* ensure images stay within the column bounds*//*
+
 img {
   max-width: 100%;
 }
+*/
