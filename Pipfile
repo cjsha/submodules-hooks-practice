@@ -6,3 +6,7 @@ verify_ssl = true
 [packages]
 sphinx = "*"
 pydata-sphinx-theme = "*"
+sphinx-design = "*"
+sphinx-autobuild = "*"
+gitpython = "*"
+pyyaml = "*"

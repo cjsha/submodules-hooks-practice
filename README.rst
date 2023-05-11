@@ -1,7 +1,7 @@
 *************************************************
 Template for Open Ephys Documentation
 *************************************************
-This template is for building documentation of Open Ephys devices or software.
+This template is for producing documentation for Open Ephys hardware or software.
 
 What is this template
 ####################################
@@ -40,7 +40,7 @@ Each documentation page is saved as an individual .rst file in the 'source' fold
       Miso, Bold, 36 pt, Kerning: Optical
       Be sure to expand text before saving as .svg as Miso will not load as font.
 * source_static/theme_overrides.css
-   * Change overhead navigation bar colour (.navbar { background: yourfavecolour })
+   * Change overhead navigation bar colour (.navbar { background: your_favorite_color })
 * .github/workflows/sphinx-build.yml
    * git clone https://github.com/open-ephys/doc-template.git # change to your repo
 
