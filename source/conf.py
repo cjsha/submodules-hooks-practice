@@ -16,7 +16,6 @@ try:
                                                                 git config --local user.name "GitHub Action"
                                                                 git add .
                                                                 git commit -m "Update documentation" -a || true"""
-        print(loaded_data)
 except FileNotFoundError:
     print(".github/workflows/sphinx-build.yml doesn't exist")
     exit(1)
@@ -177,10 +176,8 @@ html_favicon = "../submodule/favicon.png"
 html_css_files = ["theme_overrides.css"]
 
 
-user_name = repo.config_reader().get_value("user", "name")
-print(user_name)
-repo_name = repo.remotes.origin.url.split('.git')[0].split('/')[-1]
-print(repo_name)
+user_name = repo_url.split('/')[3]
+repo_name = repo_url.split('.git')[0].split('/')[-1]
 
 html_context = {
     "github_user": user_name,
