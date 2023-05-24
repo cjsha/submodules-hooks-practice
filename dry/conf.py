@@ -53,7 +53,7 @@ extensions = [
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ["submodule"]
+templates_path = ["../submodule"]
 
 # The master toctree document.
 
@@ -81,12 +81,12 @@ html_theme = "pydata_sphinx_theme"
 html_logo = "../submodule/oe_logo_name.png"
 html_scaled_image_link = True
 
-# Add any paths that contain custom static files (such as style sheets) here,
-# relative to this directory. They are copied after the builtin static files,
+# Add any paths that contain custom _static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin _static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["../submodule"]
 
-# Custom sidebar templates, must be a dictionary that maps document names to template names.
+# Custom sidebar templates, must be a dictionary that maps document names to commutator-template names.
 # The default sidebars (for documents that don't match any pattern) are
 # defined by theme itself.  Builtin themes are using these templates by
 # default: ``['localtoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html']``.
@@ -196,15 +196,17 @@ html_context = {
 }
 
 dry_json = {
-    "miniscope-template": {
-        "kilo": {
-            "product": "Kiloscope",
+    "commutator-template": {
+        "coax": {
+            "product": "Coax Commutator",
+            "shorthand": "coax",
             # "bonsai_packages": [
             #     "Bonsai.Onix"
             # ]
         },
-        "ucla-mini-v4": {
-            "product": "UCLA Miniscope v4",
+        "spi": {
+            "product": "SPI Commutator",
+            "shorthand": "spi",
             # "bonsai_packages": [
             #     "Bonsai.Miniscope",
             #     "Bonsai.Onix"
@@ -219,7 +221,7 @@ linkcheck_anchors = False
 
 def rstjinja(app, _, source):
     """
-    Render pages as a jinja template.
+    Render pages as a jinja commutator-template.
     """
     # Make sure we're outputting HTML
     if app.builder.format != 'html':
