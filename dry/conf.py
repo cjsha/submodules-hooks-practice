@@ -53,7 +53,7 @@ extensions = [
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ["../submodule", "."]
+templates_path = ["."]
 
 # The master toctree document.
 
