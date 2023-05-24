@@ -8,21 +8,21 @@ import os
 repo = Repo("..")
 repo_url = repo.remotes.origin.url
 
-# try:
-#     with open(".github/workflows/sphinx-build.yml", "r+") as yaml_file:
-#         data = yaml.safe_load_all(yaml_file)
-#         loaded_data = list(data)
-#         loaded_data[0]['jobs']['docs']['steps'][6]['run'] = \
-#             """"git clone repo_name = {repo_url} --branch gh-pages --single-branch gh-pages
-#                 cp -r docs/html/* gh-pages/
-#                 cd gh-pages
-#                 git config --local user.email "action@github.com"
-#                 git config --local user.name "GitHub Action"
-#                 git add .
-#                 git commit -m "Update documentation" -a || true"""
-# except FileNotFoundError:
-#     print(".github/workflows/sphinx-docs.yml doesn't exist")
-#     exit(1)
+try:
+    with open("./../.github/workflows/sphinx-build.yml", "r+") as yaml_file:
+        data = yaml.safe_load_all(yaml_file)
+        loaded_data = list(data)
+        loaded_data[0]['jobs']['build']['steps'][6]['run'] = \
+            """"git clone repo_name = {repo_url} --branch gh-pages --single-branch gh-pages
+                cp -r docs/html/* gh-pages/
+                cd gh-pages
+                git config --local user.email "action@github.com"
+                git config --local user.name "GitHub Action"
+                git add .
+                git commit -m "Update documentation" -a || true"""
+except FileNotFoundError:
+    print(".github/workflows/sphinx-docs.yml doesn't exist")
+    exit(1)
 
 # -*- coding: utf-8 -*-
 # Configuration file for the Sphinx documentation builder.

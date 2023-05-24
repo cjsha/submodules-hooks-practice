@@ -28,7 +28,7 @@ tether between a UCLA Miniscope v4 mounted on a freely moving animal and ONIX.
 
    .. raw:: html
 
-            {% with static_path = '../../../../source/_static', name = 'onix-miniscopev4-commutate' %}
+            {% with static_path = '../../../../../source/_static', name = 'onix-miniscopev4-commutate' %}
                 {% include 'workflow.html' %}
             {% endwith %}
 

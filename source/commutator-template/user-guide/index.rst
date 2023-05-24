@@ -11,8 +11,6 @@ commutation of `miniscopes <https://open-ephys.org/miniscope-v4/miniscope-v4>`__
 `coaxial headstages <https://open-ephys.github.io/onix-docs/Hardware%20Guide/Headstages/index.html>`__. This user
 guide details how to use the coaxial commutator for this purpose.
 
-This text is shared between spi and coax commutator docs
-
 .. toctree::
     :hidden:
 

@@ -7,9 +7,9 @@ ONIX and Neuropixels 1.0
 This section outlines how to use Bonsai software to automate commutation of the coaxial
 tether between a Neuropixels 1.0 mounted on a freely moving animal and ONIX.
 
-#. Follow the :ref:`quick_start_:dry:`shorthand`` to ensure you can control the commutator using Bonsai.
+#.  Follow the :ref:`quick_start_:dry:`shorthand`` to ensure you can control the commutator using Bonsai.
 
-#. Install the **Bonsai.ONIX** Package from Bonsai's package manager.
+#.  Install the **Bonsai.ONIX** Package from Bonsai's package manager.
 
     -   Select Community Feed
 
@@ -28,19 +28,19 @@ tether between a Neuropixels 1.0 mounted on a freely moving animal and ONIX.
 
     ..  raw:: html
 
-            {% with static_path = '../../../../source/_static', name = 'onix-coaxheadstage-commutate' %}
+            {% with static_path = '../../../../../source/_static', name = 'onix-coaxheadstage-commutate' %}
                 {% include 'workflow.html' %}
             {% endwith %}
 
     -   Configure the **CommutatorSerialPort** property of the **BNO055 9-Axis IMU & Commutator** node to reflect the port
         to which the commutator is connected.
 
-   -  Configure the **EnableStream** property of the **BNO055 9-Axis IMU & Commutator** node as *True*.
+    -   Configure the **EnableStream** property of the **BNO055 9-Axis IMU & Commutator** node as *True*.
 
-   -  Configure the **DeviceAddress** property of the **BNO055 9-Axis IMU & Commutator** node to reflect the address in
-      which corresponds to the BNO055 for this particular headstage device. The correct address can be found by
-      referencing the ONIContext table.
+    -   Configure the **DeviceAddress** property of the **BNO055 9-Axis IMU & Commutator** node to reflect the address in
+        which corresponds to the BNO055 for this particular headstage device. The correct address can be found by
+        referencing the ONIContext table.
 
-      .. image:: ../../../../source/_static/bno-address.png
+        .. image:: ../../../../source/_static/bno-address.png
 
 #. Run the workflow in Bonsai. If all above steps are correctly performed, the commutator will follow headstage rotations

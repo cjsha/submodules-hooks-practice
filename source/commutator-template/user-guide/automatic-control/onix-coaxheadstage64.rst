@@ -7,9 +7,9 @@ ONIX and Coaxial Headstage-64
 This section outlines how to use Bonsai software to automate commutation of the coaxial
 tether between a headstage-64 mounted on a freely moving animal and ONIX.
 
-#. Follow the :ref:`quick_start_:dry:`shorthand`` to ensure you can control the commutator using Bonsai.
+#.  Follow the :ref:`quick_start_:dry:`shorthand`` to ensure you can control the commutator using Bonsai.
 
-#. Install the **Bonsai.ONIX** Package from Bonsai's package manager.
+#.  Install the **Bonsai.ONIX** Package from Bonsai's package manager.
 
     -   Select Community Feed
 
@@ -28,7 +28,7 @@ tether between a headstage-64 mounted on a freely moving animal and ONIX.
 
     .. raw:: html
 
-            {% with static_path = '../../../../source/_static', name = 'onix-coaxheadstage-commutate' %}
+            {% with static_path = '../../../../../source/_static', name = 'onix-coaxheadstage-commutate' %}
                 {% include 'workflow.html' %}
             {% endwith %}
 

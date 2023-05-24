@@ -37,7 +37,7 @@ tether between a UCLA Miniscope v4 mounted on a freely moving animal and a UCLA 
 
    .. raw:: html
 
-            {% with static_path = '../../../../source/_static', name = 'miniscopedaq-miniscopev4-commutate' %}
+            {% with static_path = '../../../../../source/_static', name = 'miniscopedaq-miniscopev4-commutate' %}
                 {% include 'workflow.html' %}
             {% endwith %}
 

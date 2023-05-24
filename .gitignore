@@ -161,8 +161,3 @@ cython_debug/
 
 dry/**.rst
 dry/**/**.rst
-
-#dry/*/*.rst
-#dry/*/*/*.rst
-#dry/*/*/*/*.rst
-#dry/*/*/*/*/*.rst

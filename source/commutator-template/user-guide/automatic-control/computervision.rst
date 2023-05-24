@@ -48,20 +48,20 @@ headstage of a freely moving animal using computer vision.
 
         <div class="bonsai-workflow-container">
             <div class="workflow-filler"></div>
-            <div class="workflow-download"><img class="download-copy-img" src="../../../../source/_static/download.svg" onclick="getFileFromURL('../../../_static/downloads/sleap-commutate.zip')" width=18px /></div>
-            <div class="workflow-copy"><img class="download-copy-img" src="../../../../source/_static/copy.svg"onclick="getTextFromURL('../../../source/_static/sleap-commutate.zip')" width=18px /></div>
+            <div class="workflow-download"><img class="download-copy-img" src="../../../../../source/_static/download.svg" onclick="getFileFromURL('../../../../../_static/sleap-commutate.zip')" width=18px /></div>
+            <div class="workflow-copy"><img class="download-copy-img" src="../../../../../source/_static/copy.svg"onclick="getTextFromURL('../../../../../source/_static/sleap-commutate.zip')" width=18px /></div>
             <div class="workflow-name"><b>sleap-commutate.zip</b></div>
-            <div class="workflow-image"><img src="../../../../../source/_static/sleap-commutate.svg" alt="sleap-commutate" /></div>
+            <div class="workflow-image"><img src="../../../../../../source/_static/sleap-commutate.svg" alt="sleap-commutate" /></div>
         </div>
 
-    #.  Direct the *Algorithm* node/sub-workflow to your trained network (.pb file)
-        by single-left-clicking the *Algorithm* node and setting the value for *ModelFileName*
+#.  Direct the *Algorithm* node/sub-workflow to your trained network (.pb file)
+    by single-left-clicking the *Algorithm* node and setting the value for *ModelFileName*
 
-    #.  Direct the *Algorithm* node/sub-workflow to your network configuration (.json file)
-        by single-left-clicking the *PredictSinglePose* node and setting the value for *TrainingConfig*
+#.  Direct the *Algorithm* node/sub-workflow to your network configuration (.json file)
+    by single-left-clicking the *PredictSinglePose* node and setting the value for *TrainingConfig*
 
-    ..  note:: Be sure to configure the **PortName** property of the **Commutator** node to reflect the port to which the
-        commutator is connected.
+..  note:: Be sure to configure the **PortName** property of the **Commutator** node to reflect the port to which the
+    commutator is connected.
 
 #. Run the workflow in Bonsai. If all above steps are correctly performed, the commutator will follow mouse rotations
 
