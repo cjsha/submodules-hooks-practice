@@ -224,15 +224,14 @@ def rstjinja(app, _, source):
     Render pages as a jinja commutator-template.
     """
     # Make sure we're outputting HTML
-    # print("what's up")
+    print("what's up")
     if app.builder.format != 'html':
         return
     src = source[0]
-    # print("WHAT'S UP")
+    print("WHAT'S UP")
     rendered = app.builder.templates.render_string(src, app.config.html_context)
-    # print("eeeeeeeeeeeeeeeeeeeeee")
+    print("eeeeeeeeeeeeeeeeeeeeee")
     source[0] = rendered
-    return
 
 
 def setup(app):
