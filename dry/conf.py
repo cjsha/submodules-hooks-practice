@@ -191,7 +191,7 @@ html_context = {
     "github_user": user_name,
     "github_repo": repo_name,
     "github_version": "main",
-    "doc_path": "source",
+    "doc_path": "dry",
     'default_mode': 'auto',
 }
 
