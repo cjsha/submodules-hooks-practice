@@ -191,7 +191,7 @@ html_context = {
     "github_user": user_name,
     "github_repo": repo_name,
     "github_version": "main",
-    "doc_path": "dry",
+    "doc_path": "source",
     'default_mode': 'auto',
 }
 
@@ -228,6 +228,7 @@ def rstjinja(app, _, source):
         return
     src = source[0]
     print(src)
+    print(app.config.html_context)
     rendered = app.builder.templates.render_string(src, app.config.html_context)
     print("eeeeeeeeeeeeeeeeeeeeee")
     source[0] = rendered

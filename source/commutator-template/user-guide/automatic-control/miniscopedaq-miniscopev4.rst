@@ -35,11 +35,11 @@ tether between a UCLA Miniscope v4 mounted on a freely moving animal and a UCLA 
 #. Download, configure, and run the following Bonsai workflow for automating commutation using orientation
    data from the miniscope’s on-board IMU sensor:
 
-   .. raw:: html
+   ..   raw:: html
 
-            {% with static_path = '../../../../../source/_static', name = 'miniscopedaq-miniscopev4-commutate' %}
-                {% include 'workflow.html' %}
-            {% endwith %}
+        {% with static_path = '../../../../../source/_static', name = 'miniscopedaq-miniscopev4-commutate' %}
+            {% include 'workflow.html' %}
+        {% endwith %}
 
    .. note:: Be sure to configure the **PortName** property of the
       **Commutator** node to reflect the port to which the commutator is
