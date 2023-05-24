@@ -1,0 +1,692 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-theme="auto">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Developer Guide &#8212; Open Ephys Documentation 0.0.0 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "auto";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/copyURLToClipboard.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'coax/developer-guide/index';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="SPI Commutator" href="../../spi/index.html" />
+    <link rel="prev" title="Troubleshooting" href="../user-guide/troubleshooting.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="auto">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Open Ephys Documentation 0.0.0 documentation</p>
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../index.html">
+                        Coax Commutator
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../spi/index.html">
+                        SPI Commutator
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://open-ephys.org">
+                    Open Ephys
+                  </a>
+                </li>
+                
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/cjsha/submodules-hooks-practice" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/openephys" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/WXAx2URNQU" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../index.html">
+                        Coax Commutator
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../spi/index.html">
+                        SPI Commutator
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://open-ephys.org">
+                    Open Ephys
+                  </a>
+                </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/cjsha/submodules-hooks-practice" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/openephys" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/WXAx2URNQU" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../quick-start-guide/index.html">Quick Start Guide</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../user-guide/index.html">User Guide</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../user-guide/mount-connect.html">Mounting and Connecting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user-guide/status-led.html">Status LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user-guide/manual-control.html">Manual Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user-guide/remote-control.html">Remote Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user-guide/saving-settings.html">Saving Settings</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../user-guide/automatic-control/index.html">Automating Commutation</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user-guide/automatic-control/onix-coaxheadstage64.html">ONIX and Coaxial Headstage-64</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user-guide/automatic-control/onix-neuropixels1%2C0.html">ONIX and Neuropixels 1.0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user-guide/automatic-control/onix-miniscopev4.html">ONIX and UCLA Miniscope v4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user-guide/automatic-control/computervision.html">Computer Vision and Any Coaxial Headstage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user-guide/automatic-control/miniscopedaq-miniscopev4.html">Miniscope DAQ and UCLA Miniscope v4</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user-guide/troubleshooting.html">Troubleshooting</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Developer Guide</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Coax Commutator</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Developer Guide</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="developer-guide">
+<span id="dev-guide-coax"></span><h1>Developer Guide<a class="headerlink" href="#developer-guide" title="Permalink to this heading">#</a></h1>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>This section provides information on hacking a commutator or
+building your own. For an overview of Open Ephys Commutators, visit the
+<a class="reference internal" href="../../index.html#oec"><span class="std std-ref">Open Ephys Commutators</span></a>.  For instructions on how to use the Coaxial Commutator, visit
+the Coaxial Commutator <a class="reference internal" href="../quick-start-guide/index.html#quick-start-coax"><span class="std std-ref">Quick Start Guide</span></a> Guide and <a class="reference internal" href="../user-guide/index.html#user-guide-coax"><span class="std std-ref">User Guide</span></a>.</p>
+</div>
+<section id="design-files">
+<h2>Design Files<a class="headerlink" href="#design-files" title="Permalink to this heading">#</a></h2>
+<p>Open Ephys commutators are open-source. Mechanical, electrical, and firmware designs are available in the
+<a class="reference external" href="https://github.com/open-ephys/onix-commutator">onix-commutator git repo</a>. Here we explain how to build
+your own commutator using these files. You might want to do this to make a custom variant of the design (e.g. with a different RF rotary joint) or adapt
+an Open Ephys Commutator to your system by reprogramming it to accept
+other inputs in addition to the <a class="reference internal" href="../user-guide/remote-control.html#remote-control-coax"><span class="std std-ref">JSON commands</span></a> that the commutator already
+accepts. Finally, there are some design considerations at the bottom of the page in case you are considering designing
+your own commutator.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The RF rotary joint and slip rings used in Open Ephys commutator are specified for millions of cycles
+without failure. If you want to replace these components, make sure you get them from a reputable
+manufacturer to maintain their reliability. We have found that
+<a class="reference external" href="https://www.spinner-group.com/en/products/rf-rotary-joints">Spinner</a> is a very good option for
+getting high quality rotary joints.</p>
+</div>
+</section>
+<section id="ordering-and-manufacturing-parts">
+<span id="bom-coax"></span><h2>Ordering and Manufacturing Parts<a class="headerlink" href="#ordering-and-manufacturing-parts" title="Permalink to this heading">#</a></h2>
+<p>The following sections describe how to fabricate the mechanical parts that comprise the Coaxial Commutator (gears and case).</p>
+<section id="bill-of-materials-bom">
+<h3>Bill of Materials (BoM)<a class="headerlink" href="#bill-of-materials-bom" title="Permalink to this heading">#</a></h3>
+<p>The bill of materials is located <a class="reference external" href="https://docs.google.com/spreadsheets/d/1M2R0Q2-OuRHzctt05BxtA3hxNcCHtRZHORzCKElmG1Q/edit?usp=sharing">here</a>.</p>
+</section>
+<section id="mechanical">
+<h3>Mechanical<a class="headerlink" href="#mechanical" title="Permalink to this heading">#</a></h3>
+<p>If you desire low quantity, first seek out local options. Many universities or libraries offer free 3D printing
+services. We use SLS/MJF to make these parts. You might be able to get away with FDM/SLA 3D printing though the quality
+of your gear mesh is not guaranteed and you will likely have to add structural supports that assist in the printing
+process. Post-processing the removal of the structural support can be time-demanding. If you don’t have access to a
+SLS/MJF printer and don’t want to compromise the printing process, there are many online manufacturers that will 3D
+print this for you. They cost more and sometimes have a minimum price to purchase (i.e.
+<a class="reference external" href="https://www.hubs.com/">3DHubs</a> has a $90 minimum at the time of writing this) which is not great if you are trying to
+print a low quantity of pieces. Other popular ones include <a class="reference external" href="https://formlabs.com/">Formlabs</a>,
+<a class="reference external" href="https://www.shapeways.com/">Shapeways</a>, <a class="reference external" href="https://www.xometry.com/">Xometry</a>,
+<a class="reference external" href="https://www.sculpteo.com/en/">Sculpteo</a> etc. Open Ephys has no affiliation with any of these companies. To
+manufacture with these companies, it is often required to upload an
+<a class="reference external" href="https://github.com/open-ephys/onix-commutator/tree/master/mechanical/single_channel/stl">STL</a> or STEP file, but they
+are starting now to accommodate other file types as well such as sldprt files.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In creating your own custom commutator, it is possible to change the gear ratio. You are only required to make
+one change in the <a class="reference external" href="https://github.com/open-ephys/onix-commutator/tree/master/firmware/commutator">firmware</a>.
+which it to modify the GEAR_RATIO macro.</p>
+</div>
+</section>
+<section id="electrical">
+<h3>Electrical<a class="headerlink" href="#electrical" title="Permalink to this heading">#</a></h3>
+<p>Printed circuit boards (PCBs) are boards that electrically connect a set of electronic components to create functional circuits.
+Those parts are soldered to the PCB to create mechanically stable and reliable operation. The commutator front panel
+is a PCB. Fortunately, PCBs are pretty cheap to fabricate nowadays. For instance,
+you can get a 5-pack of PCBs from <a class="reference external" href="https://jlcpcb.com">JLCPCB</a> for less than $5. To fabricate a PCB, a manufacturer usually
+requires that you upload <a class="reference external" href="https://github.com/open-ephys/onix-commutator/tree/master/control-board/gerber">Gerber files</a>. For the commutator front panel,
+these Gerber files can be found in the public Github repository or produced using ECAD (electrical computer-assisted drawing) files in ECAD software. ECAD software permits the design of a PCB. Open Ephys uses <a class="reference external" href="https://www.kicad.org/">KiCad</a> for this purpose. Teaching such software is beyond the scope of this guide, but you can find
+<a class="reference external" href="https://www.kicad.org/help/learning-resources/">tutorials on KiCad’s website</a> and elsewhere on the web.</p>
+<p>For ordering the electronics parts that are mounted onto the PCB, <a class="reference external" href="https://www.digikey.com">Digikey</a>,
+<a class="reference external" href="https://www.mouser.com">Mouser</a>, and <a class="reference external" href="https://www.arrow.com">Arrow</a> are go-to vendors.
+Open Ephys has no affiliation with any of these companies. Some parts may be out-of-stock in which case you are forced to
+purchase from more than one distributor if you inflexible regarding component selection. <a class="reference external" href="https://www.octopart.com">Octopart</a> is
+helpful for sorting through stock at various vendors and comparing prices. The electrical components for the commutator
+PCB are mounted (and electrically connected) through solder joints. Soldering instructions are beyond the scope of this
+developer guide but there are several <a class="reference external" href="https://www.youtube.com/results?search_query=how+to+solder+pcb">great guides on YouTube</a>.
+If you are soldering this yourself, use the designators on the PCB’s silkscreen and the electrical components contained
+in the BoM (also labelled with designators) to match exposed solder pads to electrical components. This is how you know
+where to solder each component. You can also get them pre-assembled by PCB assemblers. JLCPCB for instance, fabricates
+and assembles PCBs. For this you need to use an ECAD software to generate a properly formatted BoM and Pick n’ Place
+file.</p>
+</section>
+</section>
+<section id="teensy-and-programming-an-open-ephys-commutator">
+<h2>Teensy and Programming an Open Ephys Commutator<a class="headerlink" href="#teensy-and-programming-an-open-ephys-commutator" title="Permalink to this heading">#</a></h2>
+<p>Commutator firmware can be uploaded to the device using the <a class="reference external" href="https://www.arduino.cc/en/software">Arduino IDE</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You will need to add the <a class="reference external" href="https://www.pjrc.com/teensy/teensyduino.html">Teensyduino add-on</a> to the Arduino IDE to program
+the Teensy inside the commutator. When installing Teensyduino, you should opt to install the
+bundled libraries as well. This takes care of installing <code class="code docutils literal notranslate"><span class="pre">AccelStepper</span></code>
+library rather than having to install it manually. ArduinoJSON can be
+installed through the Arduino IDE’s package manager.</p>
+</div>
+<p>It runs on a <a class="reference external" href="https://www.pjrc.com/store/teensy32.html">Teensy 3.2</a>. To compile this firmware and
+program the microcontroller, the following dependencies are required:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.arduino.cc/en/software">Arduino IDE</a></p></li>
+<li><p><a class="reference external" href="https://www.pjrc.com/teensy/td_download.html">Teensyduino add-on</a></p></li>
+<li><p><a class="reference external" href="https://www.airspayce.com/mikem/arduino/AccelStepper/">AccelStepper</a></p></li>
+<li><p><a class="reference external" href="https://arduinojson.org/">Arduino JSON</a></p></li>
+</ul>
+<p>The Teensy is a microcontroller development board (much like the Arduino for those who are familiar). It is the brains
+of the commutator. To directly  control the commutator via computer, it helps to learn to interface with the Teensy. To do that:</p>
+<ol class="arabic simple">
+<li><p>Download the <a class="reference external" href="https://www.arduino.cc/en/software">Arduino IDE</a></p></li>
+<li><p>Install the Arduino IDE’s Teensy plugin, <a class="reference external" href="https://www.pjrc.com/teensy/td_download.html">Teensyduino</a></p></li>
+<li><p>Install relevant <a class="reference external" href="https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-installing-a-library">Arduino libraries</a>: <em>AccelStepper</em> and <em>Arduino JSON</em></p></li>
+<li><p>Open the <a class="reference external" href="https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-serial-monitor">Arduino IDE’s serial monitor</a></p></li>
+<li><p>Set correct COM port to which the Teensy is connected and set the serial monitor baud rate to 9600</p></li>
+<li><p>Send a command to the commutator according to the communication below.</p></li>
+</ol>
+<p>The serial monitor displays messages between the commutator and the computer to which the commutator is connected. To send
+RPCs to the commutator through the serial monitor, type in the Arduino IDE’s Serial Monitor input field. The commutator’s Teensy is pre-programmed to receive
+specific RPCs in the JSON format. Refer to the <a class="reference internal" href="../user-guide/remote-control.html#remote-control-coax"><span class="std std-ref">Remote Control</span></a> page of the User Guide for more information on that. Other serial
+monitors can be used (see <a class="reference external" href="https://www.compuphase.com/software_termite.htm">Termite</a> for instance), but these
+instructions recommend the Arduino IDE because the Arduino IDE is already quite common in the open-source and science community.
+It also allows the user to program the Teensy in a convenient way if that is desired. Commutator firmware can be modified to accept other RPCs or inputs.</p>
+<p>This is the <a class="reference external" href="https://github.com/open-ephys/onix-commutator/tree/master/firmware/commutator">firmware with which the commutator ships</a>.</p>
+</section>
+<section id="assembly">
+<h2>Assembly<a class="headerlink" href="#assembly" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Gather the materials listed in the BOM for the commutator</p></li>
+<li><p>Visually inspect to confirm that all the components on the PCB are properly soldered.</p></li>
+<li><p>If you have access to a multi-meter, check for shorts between power supply rails and ground.</p></li>
+<li><p>Plug a USB cable into the PCB and ensure that the LED and capacitive sense buttons seems to work. Unplug the USB cable.</p></li>
+<li><p>Insert the SMA rotary joint and fasten it with three M2.5 screws 10mm long to the case</p></li>
+<li><p>Insert the stepper motor and fasten it to the case with four M2.5 screws 6mm long</p></li>
+<li><p>Connect the stepper motor to the 4-pin connector on the back of the commutator front panel</p></li>
+<li><p>Fasten the commutator PCB to the case with four M2.5 screws 6mm long</p></li>
+<li><p>Insert the gears onto the rotary joint rotor and motor rotor. Glue them in place such that the gears are properly
+meshed. Clamp to ensure the gears do not mis-align during the curing process.</p></li>
+<li><p>Plug the USB cable into the commutator and try a few manual turns. If the commutator is turning the wrong way, remove the PCB and flip the motor connections.</p></li>
+</ol>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../user-guide/troubleshooting.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Troubleshooting</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../spi/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">SPI Commutator</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#design-files">Design Files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ordering-and-manufacturing-parts">Ordering and Manufacturing Parts</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bill-of-materials-bom">Bill of Materials (BoM)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mechanical">Mechanical</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electrical">Electrical</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teensy-and-programming-an-open-ephys-commutator">Teensy and Programming an Open Ephys Commutator</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assembly">Assembly</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../../_sources/coax/developer-guide/index.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2010-2023, Open Ephys &amp; Contributors.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.2.1.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

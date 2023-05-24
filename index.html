@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Open Ephys Miniscopes &#8212; Open Ephys Documentation 0.0.0 documentation</title>
+    <title>Open Ephys Commutators &#8212; Open Ephys Documentation 0.0.0 documentation</title>
   
   
   
@@ -45,7 +45,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="UCLA Miniscope v4" href="ucla-mini-v4/index.html" />
+    <link rel="next" title="Coax Commutator" href="coax/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -128,15 +128,15 @@
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="ucla-mini-v4/index.html">
-                        UCLA Miniscope v4
+                      <a class="nav-link nav-internal" href="coax/index.html">
+                        Coax Commutator
                       </a>
                     </li>
                 
 
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="kilo/index.html">
-                        Kiloscope
+                      <a class="nav-link nav-internal" href="spi/index.html">
+                        SPI Commutator
                       </a>
                     </li>
                 
@@ -265,15 +265,15 @@ document.write(`
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="ucla-mini-v4/index.html">
-                        UCLA Miniscope v4
+                      <a class="nav-link nav-internal" href="coax/index.html">
+                        Coax Commutator
                       </a>
                     </li>
                 
 
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="kilo/index.html">
-                        Kiloscope
+                      <a class="nav-link nav-internal" href="spi/index.html">
+                        SPI Commutator
                       </a>
                     </li>
                 
@@ -371,31 +371,58 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="toctree-wrapper compound">
-</div>
-<section id="open-ephys-miniscopes">
-<h1>Open Ephys Miniscopes<a class="headerlink" href="#open-ephys-miniscopes" title="Permalink to this heading">#</a></h1>
+  <section id="open-ephys-commutators">
+<span id="oec"></span><h1>Open Ephys Commutators<a class="headerlink" href="#open-ephys-commutators" title="Permalink to this heading">#</a></h1>
+<a class="reference internal image-reference" href="_images/commutator-front-thin.jpg"><img alt="image of coaxial commutator" class="align-left" src="_images/commutator-front-thin.jpg" style="width: 190px;" /></a>
+<p>Open-ephys commutators provide nearly <strong>torque-free</strong> tether management for freely moving recordings. Inertial-
+measurement units (IMUs) or video-based pose-estimation methods (e.g.
+<a class="reference external" href="https://github.com/DeepLabCut/DeepLabCut&quot;">DeepLabCut</a> or <a class="reference external" href="https://github.com/talmolab/sleap">SLEAP</a>) provide
+real-time measurements of animal orientation. Therefore, these technologies can be used  to drive active commutation
+instead of relying on tether torque measurement, which is used in conventional active commutators. This permits the
+use of exceptionally thin tethers (such as these
+<a class="reference external" href="https://open-ephys.github.io/onix-docs/Hardware%20Guide/Headstages/headstage-64/index.html">micro coaxial cables</a>)
+that promote natural animal behavior but are to flexible to be used with conventional commutators.</p>
+<p>Currently available Open Ephys Commutators include:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Coax Commutator:</dt><dd><p>Compatible with <a class="reference external" href="https://open-ephys.org/miniscope-v4/miniscope-v4">UCLA Miniscopes</a> and
+<a class="reference external" href="https://open-ephys.github.io/onix-docs/Hardware%20Guide/Headstages/headstage-64/index.html">Open Ephys Headstages</a></p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>SPI Commutator:</dt><dd><p>Compatible with headstages that use SPI digital communication such as those from
+<a class="reference external" href="https://open-ephys.org/acquisition-system/low-profile-spi-headstage-64ch">Open Ephys</a> and
+<a class="reference external" href="https://intantech.com/pricing.html">Intan</a></p>
+</dd>
+</dl>
+</li>
+</ul>
+<p>To start using your your Open Ephys Commutator, please refer to the guide that corresponds with your device:</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row docutils">
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md sd-card-hover sd-text-center docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-Miniscope v4</div>
+Coaxial Commutator</div>
 </div>
-<a class="sd-stretched-link reference internal" href="ucla-mini-v4/index.html"><span class="doc"></span></a></div>
+<img alt="image of coax cables" class="sd-card-img-bottom" src="_images/coax-cables.jpg" />
+<a class="sd-stretched-link reference internal" href="coax/index.html"><span class="doc"></span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md sd-card-hover sd-text-center docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-Kiloscope</div>
+SPI Commutator</div>
 </div>
-<a class="sd-stretched-link reference internal" href="kilo/index.html"><span class="doc"></span></a></div>
+<img alt="image of spi cables" class="sd-card-img-bottom" src="_images/spi-cables.jpg" />
+<a class="sd-stretched-link reference internal" href="spi/index.html"><span class="doc"></span></a></div>
 </div>
 </div>
 </div>
-<p>htrhsdgfd</p>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
 
@@ -410,11 +437,11 @@ Kiloscope</div>
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="right-next"
-       href="ucla-mini-v4/index.html"
+       href="coax/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">UCLA Miniscope v4</p>
+        <p class="prev-next-title">Coax Commutator</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
