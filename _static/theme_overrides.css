@@ -1,4 +1,6 @@
 
+@import 'pydata.css';
+
 /* import fonts */
 
 @font-face {
@@ -260,7 +262,6 @@ h6 {
 }
 
 /* List items in main area, but not in side bars */
-
 body > li,
 p {
     line-height: 1.5;
@@ -381,7 +382,6 @@ i.fa-twitter-square:before {
 }
 
 /* Quick links */
-
 .quicklinks {
     color: var(--onix-txt-color);
 }
