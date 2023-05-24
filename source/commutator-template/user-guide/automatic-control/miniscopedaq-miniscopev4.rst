@@ -19,34 +19,35 @@ tether between a UCLA Miniscope v4 mounted on a freely moving animal and a UCLA 
 
 #. Install the **Bonsai.Miniscope** Package from Bonsai's package manager.
 
-   - Select Community Feed
+    -   Select Community Feed
 
-     .. image:: ../../../../source/_static/bonsai-community-feed.png
-        :alt: Screenshot for selecting package source
+        ..  image:: ../../../../source/_static/bonsai-community-feed.png
+            :alt: Screenshot for selecting package source
 
-   - Install **Bonsai.Miniscope**
+    -   Install **Bonsai.Miniscope**
 
-     .. image:: ../../../../source/_static/install-bonsai-miniscope.png
-        :alt: Screenshot for installing Bonsai.Miniscope
+        ..  image:: ../../../../source/_static/install-bonsai-miniscope.png
+            :alt: Screenshot for installing Bonsai.Miniscope
 
-#. Mount the commutator and establish all electrical connections according to
-   the information found in the :ref:`mounting_:dry:`shorthand``.
+#.  Mount the commutator and establish all electrical connections according to
+    the information found in the :ref:`mounting_:dry:`shorthand``.
 
-#. Download, configure, and run the following Bonsai workflow for automating commutation using orientation
-   data from the miniscope’s on-board IMU sensor:
+#.  Download, configure, and run the following Bonsai workflow for automating commutation using orientation
+    data from the miniscope’s on-board IMU sensor:
 
-   ..   raw:: html
+    ..  raw:: html
 
         {% with static_path = '../../../../../source/_static', name = 'miniscopedaq-miniscopev4-commutate' %}
             {% include 'workflow.html' %}
         {% endwith %}
 
-   .. note:: Be sure to configure the **PortName** property of the
-      **Commutator** node to reflect the port to which the commutator is
-      connected.
+    ..  note:: Be sure to configure the **PortName** property of the
+        **Commutator** node to reflect the port to which the commutator is
+        connected.
 
-#. Run the workflow in Bonsai. If all above steps are correctly performed, the
-   commutator will follow miniscope rotations
+
+#.  Run the workflow in Bonsai. If all above steps are correctly performed, the
+    commutator will follow miniscope rotations
 
 .. _Miniscope-DAQ-QT-GUI_:dry:`shorthand`:
 

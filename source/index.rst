@@ -4,7 +4,7 @@
 Open Ephys Commutators
 *************************************************
 
-.. image:: ../source/_static/commutator-front-thin.jpg
+..  image:: ../source/_static/commutator-front-thin.jpg
     :align: left
     :width: 190
     :alt: image of coaxial commutator
@@ -20,13 +20,13 @@ that promote natural animal behavior but are to flexible to be used with convent
 
 Currently available Open Ephys Commutators include:
 
-* Coax Commutator:
-    Compatible with `UCLA Miniscopes <https://open-ephys.org/miniscope-v4/miniscope-v4>`_ and
-    `Open Ephys Headstages <https://open-ephys.github.io/onix-docs/Hardware%20Guide/Headstages/headstage-64/index.html>`_
-* SPI Commutator:
-    Compatible with headstages that use SPI digital communication such as those from
-    `Open Ephys <https://open-ephys.org/acquisition-system/low-profile-spi-headstage-64ch>`_ and
-    `Intan <https://intantech.com/pricing.html>`_
+*   Coax Commutator:
+        Compatible with `UCLA Miniscopes <https://open-ephys.org/miniscope-v4/miniscope-v4>`_ and
+        `Open Ephys Headstages <https://open-ephys.github.io/onix-docs/Hardware%20Guide/Headstages/headstage-64/index.html>`_
+*   SPI Commutator:
+        Compatible with headstages that use SPI digital communication such as those from
+        `Open Ephys <https://open-ephys.org/acquisition-system/low-profile-spi-headstage-64ch>`_ and
+        `Intan <https://intantech.com/pricing.html>`_
 
 To start using your your Open Ephys Commutator, please refer to the guide that corresponds with your device:
 

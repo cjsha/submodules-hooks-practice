@@ -26,13 +26,14 @@ tether between a headstage-64 mounted on a freely moving animal and ONIX.
 #.  Download, configure, and run the following Bonsai workflow for automating commutation using orientation
     data from the headstage’s on-board IMU sensor:
 
-    .. raw:: html
+    ..  raw:: html
 
-            {% with static_path = '../../../../../source/_static', name = 'onix-coaxheadstage-commutate' %}
-                {% include 'workflow.html' %}
-            {% endwith %}
+        {% with static_path = '../../../../../source/_static', name = 'onix-coaxheadstage-commutate' %}
+            {% include 'workflow.html' %}
+        {% endwith %}
 
-    -  Configure the **CommutatorSerialPort** property of the **BNO055 9-Axis IMU & Commutator** node to reflect the port
+
+    -   Configure the **CommutatorSerialPort** property of the **BNO055 9-Axis IMU & Commutator** node to reflect the port
         to which the commutator is connected.
 
     -   Configure the **EnableStream** property of the **BNO055 9-Axis IMU & Commutator** node as *True*.

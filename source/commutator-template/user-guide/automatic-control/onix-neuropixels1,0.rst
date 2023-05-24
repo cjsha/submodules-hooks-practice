@@ -28,9 +28,9 @@ tether between a Neuropixels 1.0 mounted on a freely moving animal and ONIX.
 
     ..  raw:: html
 
-            {% with static_path = '../../../../../source/_static', name = 'onix-coaxheadstage-commutate' %}
-                {% include 'workflow.html' %}
-            {% endwith %}
+        {% with static_path = '../../../../../source/_static', name = 'onix-coaxheadstage-commutate' %}
+            {% include 'workflow.html' %}
+        {% endwith %}
 
     -   Configure the **CommutatorSerialPort** property of the **BNO055 9-Axis IMU & Commutator** node to reflect the port
         to which the commutator is connected.
@@ -43,4 +43,4 @@ tether between a Neuropixels 1.0 mounted on a freely moving animal and ONIX.
 
         .. image:: ../../../../source/_static/bno-address.png
 
-#. Run the workflow in Bonsai. If all above steps are correctly performed, the commutator will follow headstage rotations
+#.  Run the workflow in Bonsai. If all above steps are correctly performed, the commutator will follow headstage rotations
